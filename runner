@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if the correct number of arguments is passed
+if [ "$#" -ne 2 ]; then
+    echo "Usage: ./runner <hotel_ids> <destination_ids>"
+    exit 1
+fi
+
+# Execute the Node.js app with provided arguments
+node index.js "$1" "$2"
